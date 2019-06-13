@@ -487,14 +487,15 @@ Array.prototype.concatAll = function() {
 };
 //Use map() and concatAll() to project and flatten the movieLists into an array of video ids
 
-movieLists.map(movieList=>movieList.videos).concatAll().map(movieID=>movieID.id);
-console.log(movieLists.map(movieList=>movieList.videos).concatAll().map(movieID=>movieID.id));
+// movieLists.map(movieList=>movieList.videos).concatAll().map(movieID=>movieID.id);
+// console.log(movieLists.map(movieList=>movieList.videos).concatAll().map(movieID=>movieID.id));
 
 
 //Retrieve id, title, and a 150x200 box art url for every video
 
-var movieList=movieLists.map(movies=>movies.videos).concatAll()
-    .map(videos=>videos.boxarts.
-    filter(boxart=>boxart.width==150 && boxart.height==200)
-    .map(boxart=>({id: videos.id, title: videos.title, boxart: boxart.url}))).concatAll(); 
-console.log(movieList);
+// var movieList=movieLists.map(movies=>movies.videos).concatAll()
+//     .map(videos=>videos.boxarts.
+//     filter(boxart=>boxart.width==150 && boxart.height==200)
+//     .map(boxart=>({id: videos.id, title: videos.title, boxart: boxart.url}))).concatAll(); 
+// console.log(movieList);
+
